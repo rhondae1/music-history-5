@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="style/css" href="style.css">
+
+    <title>Please Don't Stop the Music</title>
+  </head>
+  <body class="flex-container">
+
+
+    <header class="header">
+      <nav id="bar" class="nav">
+        <ul>
+          <li><a href="#">View Music |</a></li>
+          <li><a href="#">Add Music |</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div id="selections" class="sidebar_left">
+      <p >Song Length:</p>
+      <div id="slider">
+        <input class="bar" type="range" id="rangeinput" value="50"   onchange="rangevalue.value=value"/>
+        <span class="highlight"></span>
+        <output id="rangevalue">50</output>
+      </div>
+
+      <div>
+        <form action="artist">
+          <p class="art">Artist:</p>
+          <label>
+            <select>
+              <option selected> Select Box </option>
+              <option>Short Option</option>
+              <option>This Is A Longer Option</option>
+            </select>
+          </label>
+
+          
+
+          <p class="art">Album:</p>
+          <label>
+            <select>
+              <option selected> Select Box </option>
+              <option>Short Option</option>
+              <option>This Is A Longer Option</option>
+            </select>
+          </label>
+
+
+          
+          <p class="art">Artist:</p>
+          <label>
+            <select>
+              <option selected> Select Box </option>
+              <option>Short Option</option>
+              <option>This Is A Longer Option</option>
+            </select>
+          </label>
+
+          
+
+          <p>Genre:</p>
+          <input type="checkbox" name="genre" value="rock"/>Rock
+          <input type="checkbox" name="genre" value="pop"/>Pop
+          <input type="checkbox" name="genre" value="blues"/>Blues<br>
+          <input type="checkbox" name="genre" value="classical"/>Classical
+          <input type="checkbox" name="genre" value="jazz"/>Jazz<br>
+          <input type="checkbox" name="genre" value="hip hop"/>Hip Hop
+
+          <button type="button">Filter</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="songList" class="sidebar_right">
+     <!--<form action="titles">
+
+        <p class="songName">SONG NAME</p>
+        <p class="info">Artist Name | Album Name | Genre</p>
+        <p class="songName">SONG NAME</p> 
+        <p class="info">Artist Name | Album Name | Genre</p>
+        <p class="songName">SONG NAME</p>
+        <p class="info">Artist Name | Album Name | Genre</p>
+        <p class="songName">SONG NAME</p>
+        <p class="info">Artist Name | Album Name | Genre</p>
+        <p class="songName">SONG NAME</p>
+        <p class="info">Artist Name | Album Name | Genre</p>
+      </form>-->
+    </div>
+
+    <div>Consumer Advisory: Auditory consumption of pure, organic, unadulterated vocals, family harmonies, honest songwriting, combined with authentic talent cultivated by years of music lessons, dedication and  hard work may increase the risk of intolerance for digital instruments, auto-tuned vocals and shallow subject matter. 
+
+Please alert any band member if you have special requests.  If we can't play it, we will just play something else.</div>
+
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+    <script src="javascripts/main.js"></script>
+
+  </body>
+</html>

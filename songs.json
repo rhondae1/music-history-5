@@ -1,0 +1,38 @@
+{
+  "songs": [{
+
+"Artist": "The Police",
+"Album": "Syncronicity",
+"Track": "Every Breath You Take",
+"Genre": "Pop"},
+
+{"Artist": "John Mayer",
+"Album": "Continuum",
+"Track": "Stop This Train",
+"Genre": "Pop"},
+
+{"Artist": "Ray Charles",
+"Album": "Georgia on my Mind",
+"Track": "Georgia on my Mind",
+"Genre": "Soul"},
+
+{"Artist": "Nickel Creek",
+"Album": "Why Let the Fire Die",
+"Track": "Helena",
+"Genre": "Alternative"},
+
+{"Artist": "Alison Krauss",
+"Album": "Forget About It",
+"Track": "Forget About It",
+"Genre": "Bluegrass/Alternative"},
+
+{"Artist": "Avicci",
+"Album": "True",
+"Track": "Hey Brother",
+"Genre": "Bluegrass/Alternative"}
+]
+}
+
+
+
+

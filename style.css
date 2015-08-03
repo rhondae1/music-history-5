@@ -1,0 +1,81 @@
+
+/*Using your new CSS skills, you'll build even better looking music history pages.
+
+Use the Flexible Layout Box model to ensure that both the form section and the content section are the same height.
+The entire container for the even songs (plus its details) should have a background color of Sea Shell (SeaShell or #FFF5EE)
+The entire container for the odd songs (plus its details) should have a background color of Mint Cream (MintCream or #F5FFFA)
+The first song container should have bold text.
+Set the navigation bar's position so that it's always on the top of the page, even if you scroll down. To ensure this works, you can just add some div tags at the bottom of the page that add enough text that would force you to scroll the browser.*/
+
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.nav {
+  background-color: #FFB4B0;
+  text-align: center;
+  padding: 2.5%;
+}
+
+.sidebar_left {
+  background-color: #4DD7FA;
+  flex-grow: 1;
+
+}
+
+.sidebar_right {
+  background-color: #FEFAC0;
+  padding-left: 1%;
+  flex-grow: 2;
+
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+
+}
+
+.nav, .sidebar_left, .sidebar_right {
+  margin: 1%;
+  border-style: 3px solid;
+  border-color: black;
+}
+
+
+
+
+/* We tell all items to be 100% width */
+.header {
+  flex: 1 100%;
+}
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  /*#bar { flex: 2 0px; }
+  
+  .sidebar-left { order: 1; }
+  .sidebar_right { order: 2; }
+  .footer { order: 3; }*/
